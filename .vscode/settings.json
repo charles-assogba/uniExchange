@@ -1,0 +1,19 @@
+{
+  "css.validate": false,
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "html": "html"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.inlineSuggest.enabled": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "className=\"([^\"]*)\"",
+    "className=\\'([^\\']*)\\'",
+    "className=\\{([^\\}]*)\\}"
+  ]
+}
