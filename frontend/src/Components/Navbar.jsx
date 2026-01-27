@@ -12,8 +12,8 @@ export default function Navbar() {
  const [open, setOpen]=React.useState(false);
   return (
     <>
-      <nav>
-        <div className="container flex justify-between items-center py-8">
+      <nav className="w-full fixed top-0 left-0 z-50">
+        <div className="container flex justify-between items-center py-8 overflow-visible relative z-50">
           {/* logo section */}
           <div className="text-2xl flex items-center gap-2 font-bold uppercase">
             <GiSellCard/>

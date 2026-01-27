@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { NavbarMenu } from "../MockData/data";
 
 const DropdownMenu = ({ items, title }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +7,7 @@ const DropdownMenu = ({ items, title }) => {
     <div 
       className="relative"
       onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setIsOpen(false)}
+      
     >
       {/* Trigger button */}
       <button className="px-3 hover:text-primary font-semibold flex items-center gap-1">
@@ -22,10 +21,9 @@ const DropdownMenu = ({ items, title }) => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
-
       {/* Dropdown content */}
       {isOpen && (
-        <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-20">
+        <div onMouseLeave={() => setIsOpen(false)} className="absolute top-full left-0 mt-2 w-40 bg-white rounded-lg shadow-lg border border-gray-100 py-3 z-50 min-h-[160px]">
           {items.map((item, index) => (
             <a
               key={index}
