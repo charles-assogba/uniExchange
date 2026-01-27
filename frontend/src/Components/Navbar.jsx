@@ -3,6 +3,7 @@ import { CiSearch } from "react-icons/ci";
 import { GoQuestion } from "react-icons/go";
 import { GiSellCard } from "react-icons/gi";
 import { NavbarMenu } from "../MockData/data";
+import DropdownMenu from "./DropdownMenu";
 import { PiShoppingCartThin } from "react-icons/pi";
 import { MdMenu } from "react-icons/md";
 import ResponsiveMenu from "./ResponsiveMenu";
@@ -21,12 +22,24 @@ export default function Navbar() {
           </div>
           {/* menu section */}
           <div className="hidden md:block">
-            <ul className="flex items-center gap-6 text-gray-600">
+            <ul className="flex items-center gap-8 text-gray-600">
               {
                 NavbarMenu.map((item)=>{
-                  return(
-                    <li key={item.id}>
-                      <a href="{item.link}" className="inline-block px-3 hover:text-primary font-semibold">{item.title}</a>
+                  return( 
+                    <li key={item.id} className="relative">
+                      {item.dropdown ? (
+                        <DropdownMenu 
+                          title={item.title} 
+                          items={item.dropdownItems} 
+                        />
+                      ) : (
+                        <a 
+                          href={item.link} 
+                          className="inline-block px-3 hover:text-primary font-semibold"
+                        >
+                          {item.title}
+                        </a>
+                      )}
                     </li>
                   )
                 })

@@ -1,33 +1,28 @@
 export const NavbarMenu =  [
     {
         id:1,
-        title: "Women",
-        link: "#"
+        title: "Home",
+        link: "#",
+        dropdown: false
     },
      {
         id:2,
-        title: "Men",
-        link: "#"
+        title: "Browse",
+        link: "#",
+        dropdown: true,
+        dropdownItems: [
+            { title: 'Textbooks', link: '/category/textbooks' },
+            { title: 'Electronics', link: '/category/electronics' },
+            { title: 'Furniture', link: '/category/furniture' },
+            { title: 'Clothing', link: '/category/clothing' },
+            { title: 'View All', link: '/browse' },
+        ]
     },
-     {
+    {
         id:3,
-        title: "Designer",
-        link: "#"
-    },
-     {
-        id:4,
-        title: "Kids",
-        link: "#"
-    },
-     {
-        id:5,
-        title: "Home",
-        link: "#"
-    },
-     {
-        id:6,
-        title: "Electronics",
-        link: "#"
+        title: "Sell",
+        link: "#",
+        dropdown: false
     }
     
 ]
