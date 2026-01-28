@@ -7,6 +7,7 @@ import DropdownMenu from "./DropdownMenu";
 import { PiShoppingCartThin } from "react-icons/pi";
 import { MdMenu } from "react-icons/md";
 import ResponsiveMenu from "./ResponsiveMenu";
+import CameraSearchBar from "./CameraSearchBar";
 
 export default function Navbar() {
  const [open, setOpen]=React.useState(false);
@@ -48,8 +49,10 @@ export default function Navbar() {
           </div>
           {/* Icon section */}
           <div className="flex items-center gap-4">
+            {/*CameraSearchBar section*/}
+            <CameraSearchBar/>
             <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
-              <CiSearch className=""/>
+              <CiSearch />
             </button>
              <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
               <GoQuestion/>
