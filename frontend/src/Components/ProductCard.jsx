@@ -21,7 +21,7 @@ const ProductCard = () => {
         <Card />
       </section>
       {/*  Grid Section - End Here */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-1">
         <a
           href="#"
           className="mr-5 inline-block rounded-full bg-primary px-6 py-4 text-center font-bold text-black transition hover:border-black hover:bg-white md:mr-6 lg:mr-8"

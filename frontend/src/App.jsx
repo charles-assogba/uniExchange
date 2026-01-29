@@ -1,3 +1,4 @@
+import AboutSection from "./Components/AboutSection"
 import HeroSection from "./Components/HeroSection"
 import Navbar from "./Components/NavBar"
 import ProductCard from "./Components/ProductCard"
@@ -8,9 +9,9 @@ function App() {
   return (
       <div className="overflow-x-hidden">
         <Navbar/>
-        <HeroSection/>
-        
-          <ProductCard/>
+        <HeroSection/>      
+        <ProductCard/>
+        <AboutSection/>
         
       </div>
   )
