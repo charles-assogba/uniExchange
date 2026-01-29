@@ -1,5 +1,6 @@
 import HeroSection from "./Components/HeroSection"
 import Navbar from "./Components/NavBar"
+import ProductCard from "./Components/ProductCard"
 import { NavbarMenu } from "./MockData/data"
  
 function App() {
@@ -8,6 +9,9 @@ function App() {
       <div className="overflow-x-hidden">
         <Navbar/>
         <HeroSection/>
+        
+          <ProductCard/>
+        
       </div>
   )
 }
