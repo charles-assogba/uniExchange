@@ -1,4 +1,5 @@
 import AboutSection from "./Components/AboutSection"
+import Footer from "./Components/Footer"
 import HeroSection from "./Components/HeroSection"
 import Navbar from "./Components/NavBar"
 import ProductCard from "./Components/ProductCard"
@@ -12,7 +13,7 @@ function App() {
         <HeroSection/>      
         <ProductCard/>
         <AboutSection/>
-        
+        <Footer/>
       </div>
   )
 }

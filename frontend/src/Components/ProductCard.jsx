@@ -26,7 +26,7 @@ const ProductCard = () => {
           href="#"
           className="mr-5 inline-block rounded-full bg-primary px-6 py-4 text-center font-bold text-black transition hover:border-black hover:bg-white md:mr-6 lg:mr-8"
         >
-          Let's Talk
+          See more
         </a>
       </div>
     </div>
