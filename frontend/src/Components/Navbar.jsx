@@ -1,5 +1,6 @@
 import React from "react";
 import { CiSearch } from "react-icons/ci";
+import { MdLinkedCamera } from "react-icons/md";
 import { GoQuestion } from "react-icons/go";
 import { GiSellCard } from "react-icons/gi";
 import { NavbarMenu } from "../MockData/data";
@@ -55,12 +56,11 @@ export default function Navbar() {
                 class="w-full px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
               />
               <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-primary">
-                <CiSearch size={30} />
+                <MdLinkedCamera size={30} />
               </button>
             </div>
-            
             <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
-             
+              <CiSearch size={30} />
             </button>
             <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
               <GoQuestion />
